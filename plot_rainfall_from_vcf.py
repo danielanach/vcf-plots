@@ -156,4 +156,8 @@ def plot_rainfall_from_vcf(vcf,sample=None):
                fontweight='bold',
                fontsize=16)
 
+    plt.title(sample,
+              fontsize=20,
+              fontweight='bold')
+
     return plt.gca()
