@@ -30,7 +30,7 @@ class ContigCoordinates:
         contig_dct = {}
         for c in vcf_in.header.records:
           c = str(c)
-          if 'contig' in c:
+          if c.startswith('##contig'):
             if skip_alt_contig:
               if '_' in c:
                 continue
